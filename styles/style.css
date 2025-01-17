@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 body {
   height: 100vh;
   background-color: var(--color-primary);
@@ -159,4 +163,47 @@ ul {
 
 .button-draw:hover {
   background-color: var(--color-button-hover);
+}
+
+
+/* Waves */
+
+.wave-container {
+  /* position: relative; */
+  height: 150px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100px;
+  background: none;
+}
+
+.wave1 {
+  z-index: 1;
+  opacity: 1;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23003F7C'/%3E%3C/svg%3E");
+  background-position: 120% bottom;
+  background-repeat: repeat-x;
+}
+
+.wave2 {
+  z-index: 2;
+  opacity: 0.5;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23003F7C'/%3E%3C/svg%3E");
+  background-position: 150% bottom;
+  background-repeat: repeat-x;
+}
+
+.wave3 {
+  z-index: 3;
+  opacity: 0.2;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23003F7C'/%3E%3C/svg%3E");
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
 }
