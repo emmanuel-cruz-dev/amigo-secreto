@@ -1,4 +1,9 @@
 :root {
+  /* Font */
+  --font-family-poppins: "Poppins", serif;
+  --font-family-roboto: "Roboto", serif;
+
+  /* Colors */
   --color-primary: #4B69FD;
   --color-secondary: #FFF9EB;
   --color-tertiary: #C4C4C4;
@@ -20,6 +25,7 @@
   margin: 0;
   padding: 0;
   /* border: 1px solid red; */
+  font-family: var(--font-family-poppins);
 }
 
 html{
@@ -55,7 +61,6 @@ body {
 /* Títulos */
 .main-title {
   font-size: 1.75rem;
-  font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
   color: var(--color-white);
@@ -74,7 +79,6 @@ body {
 }
 
 .section-title {
-  font-family: "Inter", serif;
   font-size: 36px;
   font-weight: 700;
   color: var(--color-primary);
@@ -92,6 +96,7 @@ body {
 }
 
 .input-name {
+  font-family: var(--font-family-roboto);
   width: 100%;
   padding: 10px;
   padding-left: 1.5rem;
@@ -116,7 +121,6 @@ body {
   flex: 1;
   padding: 10px 15px;
   font-size: 16px;
-  font-family: "Merriweather", serif;
 }
 
 /* Estilos de botón */
@@ -124,7 +128,6 @@ button {
   background: var(--button-bg);
   box-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
   padding: 15px 30px;
-  font-family: "Inter", sans-serif;
   font-size: 1rem;
   border: none;
   border-radius: 25px;
@@ -132,6 +135,7 @@ button {
 }
 
 .button-add {
+  font-family: var(--font-family-roboto);
   /* background-color: var(--color-tertiary); */
   /* color: var(--color-text); */
   border-radius: 0 25px 25px 0;
@@ -166,6 +170,7 @@ ul {
 
 /* Botón de sortear título */
 .button-draw {
+  font-family: var(--font-family-roboto);
   display: flex;
   justify-content: center;
   width: 100%;
