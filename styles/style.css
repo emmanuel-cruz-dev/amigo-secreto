@@ -43,13 +43,6 @@ a{
   text-decoration: none;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
-
 /* Banner */
 .header-banner {
   display: flex;
