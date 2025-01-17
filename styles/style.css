@@ -5,7 +5,7 @@
 
   /* Colors */
   --color-primary: #4B69FD;
-  --color-secondary: #FFF9EB;
+  --color-secondary: #5a81a6;
   --color-tertiary: #C4C4C4;
   --color-button: #fe652b;
   --color-button-hover: #e55720;
@@ -81,7 +81,7 @@ body {
 .section-title {
   font-size: 36px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin: 10px 0;
   text-align: center;
 }
@@ -125,13 +125,19 @@ body {
 
 /* Estilos de botón */
 button {
-  background: var(--button-bg);
-  box-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
+  /* background: var(--button-bg);
+  box-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light); */
+
+  background: linear-gradient(to bottom, #4facfe, #00f2fe); /* Gradiente de azul claro a más intenso */
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px 30px;
+  color: var(--color-white);
   font-size: 1rem;
   border: none;
-  border-radius: 25px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background .3s ease-in-out;
 }
 
 .button-add {
@@ -145,12 +151,15 @@ button {
   background-color: #a1a1a1;
 } */
 
-.input-name:hover,
+/* .input-name:hover,
 button:hover {
   background: var(--hover-bg);
   box-shadow: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light);
-}
+} */
 
+button:hover {
+  background: linear-gradient(to bottom, #00f2fe, #4facfe); /* Gradiente invertido al hacer hover */
+}
 /* Listas */
 ul {
   list-style-type: none;
