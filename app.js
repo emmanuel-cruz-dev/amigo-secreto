@@ -36,7 +36,7 @@ function sortearAmigo() {
   }
 }
 
-
+// Detectando tecla enter en el input
 amigo.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
